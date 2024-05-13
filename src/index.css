@@ -1,0 +1,588 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* =============================Navbar start here ================================ */
+
+nav {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.8rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+}
+
+nav h3 {
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+nav div img {
+  height: 8vh;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+nav li {
+  text-transform: capitalize;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: #FB7272;
+  transition: 0.5s;
+}
+
+nav li:nth-child(1) {
+  color: #FB7272;
+}
+
+nav span {
+  color: #FB7272;
+  font-weight: bold;
+}
+
+/* =============================Navbar End Here ================================ */
+
+/* =============================Home Start Here ================================ */
+
+.home {
+  height: 88vh;
+  width: 100%;
+  border-radius: 0px 0px 80px 80px;
+  background-image: url(./Components/img/hero-bg.jpg);
+  background-size: 100% 110%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  row-gap: 20px;
+  padding-left: 70px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.home h1 {
+  font-size: 4.2rem;
+  /* font-weight: normal; */
+  line-height: 1.2;
+  opacity: 0.8;
+  width: 45%;
+}
+
+.home h3 {
+  font-weight: 550;
+  opacity: 0.7;
+}
+
+.btn {
+  height: 45px;
+  width: 145px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background: #FB7272;
+  border-radius: 30px;
+  border: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #75C32C;
+  transition: 0.5s;
+}
+
+/* =============================Home End Here ================================ */
+
+/* =============================Collection Start Here ================================ */
+
+.mainCollection {
+  height: 170vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-bottom: 20px;
+}
+
+.fstCard {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0px 120px;
+  box-sizing: border-box;
+  gap: 50px;
+}
+
+.smallCard {
+  height: 30vh;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.smallCard i {
+  color: #75C32C;
+  font-size: 1.5rem;
+}
+
+.smallCard h3 {
+  padding-bottom: 10px;
+  opacity: 0.7;
+}
+
+.scndCard {
+  display: flex;
+  padding: 0px 80px;
+  width: 100%;
+  box-sizing: border-box;
+  column-gap: 45px;
+}
+
+.card {
+  border-radius: 18px;
+  height: 90vh;
+  width: 33%;
+  background: #EEEDF3;
+  transition: 0.5s;
+  padding-left: 20px;
+}
+
+.scndCard img {
+  height: 350px;
+  width: 330px;
+
+}
+
+.card h2 {
+  opacity: 0.8;
+  font-size: 1.4rem;
+  font-weight: 599;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 25px;
+}
+
+.card h4 {
+  padding-left: 10px;
+  opacity: 0.7;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 60%;
+  padding-top: 5px;
+}
+
+.card h5 {
+  padding-left: 10px;
+  padding-top: 30px;
+  color: #FB7272;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.card:hover {
+  box-shadow: 0 20px 1rem rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+/* =============================Collection End Here ================================ */
+
+/* =============================Featured Start Here ================================ */
+
+.mainFeatured {
+  height: 170vh;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.mainFeatured>h1 {
+  font-size: 2.7rem;
+  text-align: center;
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.mainFeatured>p {
+  text-align: center;
+  opacity: 0.7;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.mainSale {
+  padding-top: 50px;
+  box-sizing: border-box;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  column-gap: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+
+.sale {
+  height: 60vh;
+  width: 22%;
+}
+
+.sale div {
+  height: 70%;
+  width: 100%;
+  background-image: url(./Components/img/plant3-free-img.jpg);
+  background-size: cover;
+}
+
+.sale:nth-child(2) div {
+  background-image: url(./Components/img/cactus2-free-img.jpg) !important;
+}
+
+.sale:nth-child(3) div {
+  background-image: url(./Components/img/plant5-free-img.jpg) !important;
+}
+
+.sale:nth-child(4) div {
+  background-image: url(./Components/img/plant1-free-img.jpg) !important;
+}
+
+.sale:nth-child(5) div {
+  background-image: url(./Components/img/cactus4-free-img.jpg) !important;
+}
+
+.sale:nth-child(6) div {
+  background-image: url(./Components/img/plant4-free-img.jpg) !important;
+}
+
+.sale:nth-child(7) div {
+  background-image: url(./Components/img/plant6-free-img.jpg) !important;
+}
+
+.sale:nth-child(8) div {
+  background-image: url(./Components/img/cactus6-free-img.jpg) !important;
+}
+
+.sale h6 {
+  color: #999;
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.sale h5 {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: #333;
+  padding-top: 10px;
+}
+
+.sale i {
+  font-size: 13px;
+  color: #999;
+  padding-top: 5px;
+}
+
+.sale p {
+  font-weight: bold;
+  color: #333;
+  padding-top: 5px;
+}
+
+/* =============================Featured End Here ================================ */
+
+/* =============================Need Start Here ================================ */
+
+.mainNeed {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.need {
+  height: 40vh;
+  width: 30%;
+  padding-left: 80px;
+}
+
+.need h2 {
+  width: 80%;
+  opacity: 0.8;
+}
+
+.com {
+  padding-right: 80px;
+  height: 40vh;
+  width: 70%;
+}
+
+.com p {
+  opacity: 0.7;
+  padding-bottom: 20px;
+}
+
+.need b {
+  color: #FB7272;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+.need b:hover {
+  color: #555;
+  transition: 0.5s;
+
+}
+
+.mainTest {
+  height: 115vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.test {
+  height: 100%;
+  width: 50%;
+  padding-top: 50px;
+  padding-left: 80px;
+  box-sizing: border-box;
+}
+
+.test h1 {
+  font-size: 2.8rem;
+  opacity: 0.9;
+}
+
+.test>p {
+  padding-top: 20px;
+  opacity: 0.8;
+}
+
+.student {
+  height: 45vh;
+  padding-top: 60px;
+  display: flex;
+}
+
+.studentImg {
+  height: 100%;
+  width: 50%;
+  border-radius: 20px 20px 20px 0px;
+  background-image: url(./Components/img/user1-free-img.jpg);
+  background-size: cover;
+}
+
+.studentRight {
+  width: 45%;
+  height: 100%;
+}
+
+.studentContext {
+  width: 60%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+}
+
+.studentContext p {
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 0.7;
+  line-height: 1.7;
+}
+
+.studentContext h4 {
+  opacity: 0.8;
+  padding-top: 35px;
+  font-size: 1.1rem;
+}
+
+.studentContext span {
+  font-size: 12px;
+  color: #777;
+}
+
+.studentImg2{
+  background-image: url(./Components/img/user3-free-img.jpg);
+}
+
+.studentImg1{
+  background-image: url(./Components/img/testimonial-2.jpg);
+}
+
+/* =============================Need End Here ================================ */
+
+/* =============================Shop Start Here ================================ */
+
+.mainShop{
+  height: 120vh;
+  width: 100%;
+  background: #EEEDF3;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 150px; */
+  box-sizing: border-box;
+  background-image: url(./Components/img/CTA-bg.jpg);
+  background-size: 100% 100%;
+  justify-content: center;
+}
+
+.shopContent{
+  height: 50%;
+  width: 100%;
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+}
+.shopContent h1{
+  text-align: center;
+  width: 45%;
+  line-height: 1.4;
+  font-size: 2.2rem;
+  opacity: 0.9;
+}
+
+.shopContent p{
+  width: 50%;
+  opacity: 0.6;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* =============================Shop End Here ================================ */
+
+/* =============================Footer Start Here ================================ */
+
+footer{
+  height: 75vh;
+  width: 100%;
+}
+.footerContent{
+  padding-top: 60px;
+  box-sizing: border-box;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+
+}
+.footerContent > div{
+  height: 75%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;  
+  row-gap: 20px;
+}
+.footerContent li{
+  list-style: none;
+}
+.footerContent h3{
+  font-size: 1.3rem;
+  opacity: 0.7;
+  padding-left: 10px;
+}
+.footerContent div:nth-child(2) > h3{
+  padding-right: 50px;
+}
+.footerContent li{
+  line-height: 1.8;
+  opacity: 0.8;
+}
+.footerContent div:nth-last-child(1) > h3{
+  width: 80%;
+  padding-right: 20px;
+}
+.footerContent div:nth-last-child(1){
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.footerContent img{
+  height: 80px;
+}
+
+.footerContent i{
+  padding: 11px;
+  transition: 0.5s;
+  background: #555;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.footerContent h2{
+  opacity: 0.6;
+}
+.footerContent i:hover{
+  transition: 0.5s;
+background: #75C32C;
+}
+.footerContent div:nth-child(1){
+  padding-left: 70px;
+  box-sizing: border-box;
+}
+.footer{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 70px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-top: 1px solid #99909048;
+}
+.footer h5{
+  opacity: 0.6;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* =============================Footer End Here ================================ */
+
+
